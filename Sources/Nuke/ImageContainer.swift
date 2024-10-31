@@ -16,6 +16,8 @@ public typealias PlatformImage = UIImage
 import AppKit.NSImage
 /// Alias for `NSImage`.
 public typealias PlatformImage = NSImage
+
+extension NSImage: @unchecked @retroactive Sendable {}
 #endif
 
 /// An image container with an image and associated metadata.
